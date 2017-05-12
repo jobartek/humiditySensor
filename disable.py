@@ -2,5 +2,9 @@
 import serial
 ser = serial.Serial('/dev/ttyACM0', 9600)
 
-ser.write("d")
 
+def disableSensor():
+	ser.write("d")
+	print("Disabling sensor")
+
+disableSensor()

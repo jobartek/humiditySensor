@@ -5,6 +5,7 @@ from time import sleep
 s=serial.Serial('/dev/ttyACM0',9600)
 
 def write(data):
+	s.flush()
 	print "sending " + data	
 	s.write(data)  
 

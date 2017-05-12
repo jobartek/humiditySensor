@@ -2,5 +2,9 @@
 import serial
 ser = serial.Serial('/dev/ttyACM0', 9600)
 
-ser.write("e")
 
+def enableSensor():
+	ser.write("e")
+	print("Enabling sensor")
+
+enableSensor()

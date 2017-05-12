@@ -1,4 +1,0 @@
-#! /usr/bin/python
-
-import SendCommand
-SendCommand.write("101")
